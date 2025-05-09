@@ -18,4 +18,5 @@ int main() {
 
     printf ("O aluno %s ", nome);
     printf ("obteve como media final  %.2f", media);
+    return 0;
 }
