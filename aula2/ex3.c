@@ -18,5 +18,5 @@ int main() {
 
     printf("Ola %s ", nome);
     printf("o seu IMC e de %.2f", imc);
-
+    return 0;
 }
