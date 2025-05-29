@@ -4,21 +4,29 @@
 int main() {
 
     float notas[10];
+    float soma = 0;
     float media = 0;
+    float nota;
 
     for (int i = 0; i < 10; i++) {
-        int numero;
-
         printf("digite a nota do aluno %d: ", i + 1);
-        scanf("%d", &numero);
+        scanf("%f", &nota);
 
-        notas[i] = numero;
+        notas[i] = nota
+        ;
     }
+
     for (int i = 0; i < 10; i++) {
-        media = media + notas[1];
+        soma += notas[i];
     }
-    media = media / 10;
-    //terminar
+    media = soma / 10;
 
+    for (int i = 0; i < 10; i++) {
+        printf("Nota do aluno %d: %.2f\n", i+1, notas[i]);
+        if notas[i] > acima
+    }
+    printf ("Media das notas = %.2f", media);
 
 }
+
+//terminar

@@ -29,5 +29,6 @@ int main() {
     
     if (achado == 0){
         printf("Numero nao encontrado no vetor.");}
+        
     return 0;
 }
