@@ -2,11 +2,11 @@
 #include <string.h>
 
 int ehPalindromo(char palavra[], int enter){
-    enter = strlen(palavra);
     char arvalap[enter];
-    for (int i = enter, j = 0; i > 0; i--, j++){
+    for (int i = enter -1, j = 0; i >= 0; i--, j++){
         arvalap[j] = palavra[i];
     }
+    arvalap[enter] = '\0';
     int igual = (strcmp (palavra, arvalap));
     return igual;
 }
@@ -14,14 +14,13 @@ int ehPalindromo(char palavra[], int enter){
 
 int main(){
     char palavra[50];
-    int enter;
     
     printf("Insira uma palavra: ");
 
     fgets(palavra, 50, stdin);
-    enter = (strcspn(palavra, "\n"));
+    int enter = (strcspn(palavra, "\n"));
     palavra[enter] = '\0';
 
-    printf (ehPalindromo(palavra, enter));
+    ehPalindromo(palavra, enter) == 0 ? printf("Eh palindromo") : printf("Nao eh palindromo");
 
 }
