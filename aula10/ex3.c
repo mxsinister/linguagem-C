@@ -10,8 +10,10 @@ int main() {
     pessoa usuario;
 
     printf("Qual seu nome? ");
-    scanf("%s", usuario.nome);
+    scanf("%49[^\n]", usuario.nome);
 
     printf("Qual a sua idade? ");
-    scanf("%d", usuario.idade);
+    scanf("%d", &usuario.idade);
+
+    printf("Seja bem vindo(a), %s!\nSeus dados:\nNome: %s\nIdade: %d", usuario.nome, usuario.nome, usuario.idade);
 }
