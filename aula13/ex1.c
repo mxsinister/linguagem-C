@@ -4,7 +4,7 @@ int main(){
     char c;
     int caracteres = 0;
 
-    FILE *arquivo = fopen("../arquivo.txt", "r");
+    FILE *arquivo = fopen("./arquivo.txt", "r");
 
     if (arquivo == NULL) {
         printf("Erro ao abrir o arquivo!\n");
